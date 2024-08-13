@@ -65,5 +65,49 @@ fun main() {
     |(Benjamin Franklin)
     """.trimMargin()
     println(text)
+
+//if-else statements
+    val i = 1 // or 5
+    if (i < 3) {
+        println("Smaller")
+    } else {
+        println("Bigger")
+    }
+
+    val l = 5 // or 5
+    if (l < 3) {
+        println("Smaller")
+    } else {
+        println("Bigger")
+    }
+
+    val haveSomeExtraMoney = true
+    val tip: Double =
+        if (haveSomeExtraMoney) {
+            println("Here you go") // Here you go
+            1.0 // this value is ignored, because it is not the last one
+            5.0 // this value is ignored, because it is not the last one
+
+        } else {
+            println("Sorry, I am broke")
+            10.0
+        }
+    println(tip) // 10.0
+
+    println("Is it going to rain?")
+    val probability = 100
+    if (probability <= 40) {
+        println("Unlikely")
+    } else if (probability <= 80) {
+        println("Likely")
+    } else if (probability <= 100) {
+        println("Yes")
+    } else {
+        println("What?")
+    }
+
+    val password = "ABC"
+    val error = if (password.length < 7) "Password is too short." else "Password is ok."
+    print(error)
 }
 
